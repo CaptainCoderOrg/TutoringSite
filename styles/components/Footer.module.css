@@ -1,5 +1,5 @@
 .container {
-  background: #fff;
+  background: var(--bg);
   height: 80px;
   display: flex;
   align-items: center;

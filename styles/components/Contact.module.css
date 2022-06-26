@@ -1,0 +1,18 @@
+.container {
+  background: var(--bgAlt);
+  padding: 40px;
+}
+
+.container > h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.container > form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container > form > button {
+  width: 100%;
+}
