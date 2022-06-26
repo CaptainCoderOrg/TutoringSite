@@ -1,6 +1,39 @@
+import { Carousel } from 'react-responsive-carousel';
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+import { reviews } from '../util/reviews';
+
 import styles from '../styles/components/Testimonials.module.css';
 
 export default function Testimonials() {
+  function ReviewCarousel(props) {
+    const { centerMode } = props;
+
+    return (
+      <Carousel
+        showStatus={false}
+        showThumbs={false}
+        swipeable={false}
+        infiniteLoop={true}
+        centerMode={centerMode}
+        centerSlidePercentage={50}
+        autoPlay={true}
+        interval={30000}
+      >
+        {
+          reviews.map((review, i) =>
+            <div className={styles.review} key={i}>
+              <p>{review.title}</p>
+              <p><span className={styles.openQuote}>❝</span>{review.content}❞</p>
+              <p><b>– {review.author}</b></p>
+            </div>
+          )
+        }
+      </Carousel>
+    );
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.reviewsWide}>
