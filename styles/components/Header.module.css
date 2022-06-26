@@ -1,14 +1,53 @@
 .container {
-  height: 100px;
-  background: #efefef;
+  height: 48px;
+  background: var(--bgAlt);
   display: flex;
   align-items: center;
+  box-shadow: 0 0 8px #999;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-right: 20px;
 }
 
 .bannerWrap {
+  display: flex;
+  margin-left: 8px;
+  font-family: kghappy;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bannerWrap > h1 {
+  color: #d61f26;
   margin-left: 8px;
 }
 
-.banner {
-  cursor: pointer;
+.buttons > button {
+  margin: 0 10px;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  padding: 0;
+}
+
+.buttons > button:hover {
+  color: #2196f3;
+}
+
+.menuItem {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@media (max-width: 767px) {
+  .buttons {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
