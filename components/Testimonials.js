@@ -1,4 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -20,6 +22,28 @@ export default function Testimonials() {
         centerSlidePercentage={50}
         autoPlay={true}
         interval={30000}
+        renderArrowPrev={(onClick, hasPrev, label) =>
+          hasPrev &&
+          <button
+            className={styles.arrowButton}
+            onClick={onClick}
+            title={label}
+            style={{ left: 18 }}
+          >
+            <ArrowCircleLeftIcon />
+          </button>
+        }
+        renderArrowNext={(onClick, hasNext, label) =>
+          hasNext &&
+          <button
+            className={styles.arrowButton}
+            onClick={onClick}
+            title={label}
+            style={{ right: 18 }}
+          >
+            <ArrowCircleRightIcon />
+          </button>
+        }
       >
         {
           reviews.map((review, i) =>
