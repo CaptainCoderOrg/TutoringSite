@@ -1,11 +1,19 @@
 .container {
-  background: var(--bgAlt);
+  background: var(--bg);
   padding: 40px;
 }
 
 .container > h1 {
-  text-align: center;
   margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+}
+
+.container > h1 > svg {
+  font-size: 64px;
+  margin-right: 8px;
 }
 
 .container > form {
@@ -15,4 +23,14 @@
 
 .container > form > button {
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .container > h1 {
+    font-size: 48px;
+  }
+
+  .container > h1 > svg {
+    display: none;
+  }
 }
