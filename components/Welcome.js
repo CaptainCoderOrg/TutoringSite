@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import styles from '../styles/components/Welcome.module.css';
 
 export default function Welcome(props) {
@@ -18,7 +16,7 @@ export default function Welcome(props) {
         </button>
       </div>
       <div className={styles.splash}>
-        <Image
+        <img
           className={styles.logo}
           src="/img/logo-clean.svg"
           width="512"

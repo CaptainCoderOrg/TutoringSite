@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import PersonIcon from '@mui/icons-material/Person';
 import SchoolIcon from '@mui/icons-material/School';
 import LinkIcon from '@mui/icons-material/Link';
@@ -16,7 +15,7 @@ export default function About(props) {
       <div className={styles.content}>
         <div className={styles.info}>
           <div className={styles.profileWrapper}>
-            <Image src="/img/profile.png" width="192" height="192" alt="profile" />
+            <img src="/img/profile.png" width="192" height="192" alt="profile" />
           </div>
           <div className={styles.bullets}>
             <p><SchoolIcon />University of New Mexico Computer Science</p>
