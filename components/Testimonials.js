@@ -1,4 +1,5 @@
 import { Carousel } from 'react-responsive-carousel';
+import MessageIcon from '@mui/icons-material/Message';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
@@ -60,6 +61,7 @@ export default function Testimonials() {
 
   return (
     <div className={styles.container}>
+      <h1><MessageIcon />Testimonials</h1>
       <div className={styles.reviewsWide}>
         <ReviewCarousel centerMode={true} />
       </div>

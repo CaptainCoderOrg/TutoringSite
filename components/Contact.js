@@ -1,4 +1,5 @@
 import TextField from '@mui/material/TextField';
+import EmailIcon from '@mui/icons-material/Email';
 
 import { useState } from 'react';
 
@@ -21,7 +22,7 @@ export default function Contact() {
 
   return (
     <div className={styles.container}>
-      <h1>Contact</h1>
+      <h1><EmailIcon />Contact</h1>
       <form onSubmit={e => {
         e.preventDefault();
         window.alert(JSON.stringify({ name, email, message }));
