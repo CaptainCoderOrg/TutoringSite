@@ -1,5 +1,5 @@
 .container {
-  background: var(--bg);
+  background: var(--bgAlt);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,12 +8,72 @@
 }
 
 .book {
-  display: flex;
-  align-items: center;
-  font-size: 32px;
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
-.book > svg {
-  margin-right: 8px;
+.book > a {
+  display: flex;
+  align-items: center;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.book svg {
+  font-size: 64px;
+  margin-right: 12px;
+}
+
+.container > div {
+  width: 100%;
+}
+
+.container iframe #page-region > div > div {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .book > a {
+    font-size: 48px;
+  }
+
+  .book svg {
+    display: none;
+  }
+}
+
+@media (max-width: 729px) {
+  .widgetMedium {
+    display: none;
+  }
+  .widgetBig {
+    display: none;
+  }
+}
+
+@media (min-width: 730px) and (max-width: 1079px) {
+  .widgetSmall {
+    display: none;
+  }
+  .widgetBig {
+    display: none;
+  }
+}
+
+.widgetMedium {
+  margin: -48px 0;
+}
+
+@media (min-width: 1080px) {
+  .widgetSmall {
+    display: none;
+  }
+  .widgetMedium {
+    display: none;
+  }
+}
+
+.widgetBig {
+  margin-top: -48px;
 }

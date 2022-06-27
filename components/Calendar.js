@@ -7,15 +7,23 @@ export default function Calendar() {
   return (
     <div className={styles.container}>
       <p className={styles.book}>
-        <MenuBookIcon fontSize="large" />
         <a
           className="url"
           onClick={() => document.getElementsByClassName('calendly-badge-widget')[0].click()}
         >
+          <MenuBookIcon fontSize="large" />
           Book a session
         </a>
       </p>
-      <InlineWidget url="https://calendly.com/d/dm2-845-v4s" />
+      <div className={styles.widgetSmall}>
+        <InlineWidget styles={{ height: '800px' }} url="https://calendly.com/d/dm2-845-v4s" />
+      </div>
+      <div className={styles.widgetMedium}>
+        <InlineWidget styles={{ height: '1000px' }} url="https://calendly.com/d/dm2-845-v4s" />
+      </div>
+      <div className={styles.widgetBig}>
+        <InlineWidget styles={{ height: '650px' }} url="https://calendly.com/d/dm2-845-v4s" />
+      </div>
     </div>
   );
 }
