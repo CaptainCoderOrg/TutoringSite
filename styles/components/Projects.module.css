@@ -1,0 +1,51 @@
+.container {
+  padding: 40px;
+}
+
+.container > h1 {
+  font-size: 64px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container > h1 > svg {
+  font-size: 64px;
+  margin-right: 8px;
+}
+
+.container > p {
+  text-align: center;
+  font-size: 24px;
+  color: #666;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.projects > a {
+  margin: 20px;
+  min-width: 200px;
+}
+
+@media (max-width: 767px) {
+  .container > h1 {
+    font-size: 48px;
+  }
+
+  .container > h1 > svg {
+    display: none;
+  }
+
+  .container > p {
+    font-size: 20px;
+  }
+}
