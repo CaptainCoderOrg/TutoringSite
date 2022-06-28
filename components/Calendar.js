@@ -6,15 +6,7 @@ import styles from '../styles/components/Calendar.module.css';
 export default function Calendar() {
   return (
     <div className={styles.container}>
-      <p className={styles.book}>
-        <a
-          className="url"
-          onClick={() => document.getElementsByClassName('calendly-badge-widget')[0].click()}
-        >
-          <MenuBookIcon fontSize="large" />
-          Book a session
-        </a>
-      </p>
+      <h1 className="sectionTitle"><MenuBookIcon />Book a Lesson</h1>
       <div className={styles.widgetSmall}>
         <InlineWidget styles={{ height: '800px' }} url="https://calendly.com/d/dm2-845-v4s" />
       </div>

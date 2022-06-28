@@ -15,7 +15,7 @@ export default function Projects() {
 
   return (
     <div className={styles.container}>
-      <h1><WebIcon />Student Projects</h1>
+      <h1 className="sectionTitle"><WebIcon />Student Projects</h1>
       <p>Check out the projects students have made</p>
       <div className={styles.projects}>
         <Link to="https://example.com/">

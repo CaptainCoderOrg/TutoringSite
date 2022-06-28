@@ -61,3 +61,22 @@ button {
 .blueButton:active {
   transform: scale(0.98);
 }
+
+.sectionTitle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.sectionTitle > svg {
+  margin-right: 8px;
+  font-size:  1.5em;
+}
+
+@media (max-width: 767px) {
+  .sectionTitle > svg {
+    display: none;
+  }
+}

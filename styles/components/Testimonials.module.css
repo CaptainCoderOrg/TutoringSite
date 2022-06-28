@@ -4,29 +4,8 @@
 }
 
 .container > h1 {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
   padding-top: 40px;
-  font-size: 64px;
-  margin-bottom: 0;
-}
-
-.container > h1 > svg {
-  margin-right: 8px;
-  font-size:  64px;
-}
-
-@media (max-width: 767px) {
-  .container > h1 {
-    font-size: 48px;
-  }
-
-  .container > h1 > svg {
-    display: none;
-  }
-}
 
 .arrowButton {
   position: absolute;

@@ -22,7 +22,7 @@ export default function Contact() {
 
   return (
     <div className={styles.container}>
-      <h1><EmailIcon />Contact</h1>
+      <h1 className="sectionTitle"><EmailIcon />Contact</h1>
       <form onSubmit={e => {
         e.preventDefault();
         window.alert(JSON.stringify({ name, email, message }));

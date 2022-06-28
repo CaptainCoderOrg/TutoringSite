@@ -61,13 +61,13 @@ export default function Testimonials() {
 
   return (
     <div className={styles.container}>
-      <h1><MessageIcon />Testimonials</h1>
       <div className={styles.reviewsWide}>
         <ReviewCarousel centerMode={true} />
       </div>
       <div className={styles.reviews}>
         <ReviewCarousel centerMode={false} />
       </div>
+      <h1 className="sectionTitle"><MessageIcon />Testimonials</h1>
     </div>
   );
 }

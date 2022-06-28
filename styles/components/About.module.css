@@ -3,18 +3,8 @@
   background: var(--bg);
 }
 
-.container > h1 {
-  font-size: 64px;
+.bio > h1 {
   margin-top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.container > h1 > svg {
-  margin-right: 8px;
-  font-size: 64px;
 }
 
 .content {
@@ -103,15 +93,5 @@
     margin-top: 32px;
     padding-left: 0;
     max-width: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .container > h1 {
-    font-size: 48px;
-  }
-
-  .container > h1 > svg {
-    display: none;
   }
 }

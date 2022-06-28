@@ -3,17 +3,7 @@
 }
 
 .container > h1 {
-  font-size: 64px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.container > h1 > svg {
-  font-size: 64px;
-  margin-right: 8px;
+  margin-top: 0;
 }
 
 .container > p {
@@ -37,14 +27,6 @@
 }
 
 @media (max-width: 767px) {
-  .container > h1 {
-    font-size: 48px;
-  }
-
-  .container > h1 > svg {
-    display: none;
-  }
-
   .container > p {
     font-size: 20px;
   }
