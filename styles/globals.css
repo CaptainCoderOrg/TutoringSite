@@ -42,6 +42,15 @@ button {
   flex-grow: 1;
 }
 
+.alice-carousel__prev-btn > svg, .alice-carousel__next-btn > svg {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.alice-carousel__prev-btn > svg:hover, .alice-carousel__next-btn > svg:hover {
+  color: #2196f3;
+}
+
 .blueButton {
   padding: 10px 20px;
   height: 48px;

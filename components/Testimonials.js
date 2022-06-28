@@ -1,50 +1,38 @@
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-alice-carousel';
 import MessageIcon from '@mui/icons-material/Message';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 import { reviews } from '../util/reviews';
+import { useEffect, useState } from 'react';
 
 import styles from '../styles/components/Testimonials.module.css';
 
 export default function Testimonials() {
-  function ReviewCarousel(props) {
-    const { centerMode } = props;
+  const [ready, setReady] = useState(false);
 
+  // set ready on start
+  useEffect(() => {
+    setReady(true);
+  }, []);
+
+  function ReviewCarousel() {
     return (
       <Carousel
-        showStatus={false}
-        showThumbs={false}
-        swipeable={false}
-        infiniteLoop={true}
-        centerMode={centerMode}
-        centerSlidePercentage={50}
-        autoPlay={true}
-        interval={30000}
-        renderArrowPrev={(onClick, hasPrev, label) =>
-          hasPrev &&
-          <button
-            className={styles.arrowButton}
-            onClick={onClick}
-            title={label}
-            style={{ left: 18 }}
-          >
-            <ArrowCircleLeftIcon />
-          </button>
-        }
-        renderArrowNext={(onClick, hasNext, label) =>
-          hasNext &&
-          <button
-            className={styles.arrowButton}
-            onClick={onClick}
-            title={label}
-            style={{ right: 18 }}
-          >
-            <ArrowCircleRightIcon />
-          </button>
-        }
+        infinite={true}
+        disableDotsControls={true}
+        renderPrevButton={() => <ArrowCircleLeftIcon />}
+        renderNextButton={() => <ArrowCircleRightIcon />}
+        responsive={{
+          0: {
+            items: 1,
+          },
+          900: {
+            items: 3
+          }
+        }}
       >
         {
           reviews.map((review, i) =>
@@ -61,13 +49,11 @@ export default function Testimonials() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.reviewsWide}>
-        <ReviewCarousel centerMode={true} />
-      </div>
-      <div className={styles.reviews}>
-        <ReviewCarousel centerMode={false} />
-      </div>
       <h1 className="sectionTitle"><MessageIcon />Testimonials</h1>
+        {
+          ready &&
+          <ReviewCarousel />
+        }
     </div>
   );
 }
