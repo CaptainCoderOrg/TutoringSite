@@ -21,9 +21,49 @@
   margin: 0 auto;
 }
 
-.projects > a {
+.project {
   margin: 20px;
-  min-width: 200px;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px;
+}
+
+.project img {
+  transition: 0.25s;
+}
+
+.text {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  opacity: 0;
+  transition: 0.25s;
+  pointer-events: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+.text > h1 {
+  margin: 0;
+}
+
+.text > p {
+  margin-bottom: 0;
+}
+
+.project:hover img {
+  filter: brightness(0.5);
+}
+
+.project:hover > .text {
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
