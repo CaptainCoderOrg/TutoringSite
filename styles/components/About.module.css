@@ -68,6 +68,8 @@
 }
 
 .iconButton {
+  margin-top: 12px;
+  height: 48px;
   display: flex;
   align-items: center;
 }
@@ -76,8 +78,10 @@
   margin-right: 8px;
 }
 
-.iconButton {
-  margin-top: 12px;
+.iconButton > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 991px) {

@@ -20,11 +20,10 @@ export default function Header(props) {
       </div>
       <span className="flexfill" />
       <div className={styles.buttons}>
-        <button onClick={() => scrollTo('welcome')}>Welcome</button>
-        <button onClick={() => scrollTo('about')}>About</button>
+        <button onClick={() => scrollTo('about')}>The Captain</button>
         <button onClick={() => scrollTo('testimonials')}>Testimonials</button>
         <button onClick={() => scrollTo('projects')}>Student Projects</button>
-        <button onClick={() => scrollTo('calendar')}>Calendar</button>
+        <button onClick={() => scrollTo('calendar')}>Book a Lesson</button>
         <button onClick={() => scrollTo('contact')}>Contact</button>
       </div>
       <div className={styles.menu}>
@@ -41,14 +40,9 @@ export default function Header(props) {
           onClose={() => setMenuAnchor(null)}
         >
           <MenuItem onClick={() => {
-            scrollTo('welcome');
-          }}>
-            <span className={styles.menuItem}>Welcome</span>
-          </MenuItem>
-          <MenuItem onClick={() => {
             scrollTo('about');
           }}>
-            <span className={styles.menuItem}>About</span>
+            <span className={styles.menuItem}>The Captain</span>
           </MenuItem>
           <MenuItem onClick={() => {
             scrollTo('testimonials');
@@ -63,7 +57,7 @@ export default function Header(props) {
           <MenuItem onClick={() => {
             scrollTo('calendar');
           }}>
-            <span className={styles.menuItem}>Calendar</span>
+            <span className={styles.menuItem}>Book a Lesson</span>
           </MenuItem>
           <MenuItem onClick={() => {
             scrollTo('contact');

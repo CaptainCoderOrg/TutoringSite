@@ -23,9 +23,14 @@ export default function About(props) {
             <p><VideocamIcon />Remote - Zoom and Google Hangouts</p>
             <div className={styles.iconButton}>
               <LinkIcon />
-              <button className="blueButton" onClick={() => window.open('https://is.gd/iYZfiH')}>
+              <a
+                className="blueButton"
+                href="https://is.gd/iYZfiH"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Wyzant Tutoring Profile
-              </button>
+              </a>
             </div>
             <button className="blueButton" onClick={() => scrollTo('calendar')}>
               Book now!

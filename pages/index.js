@@ -29,6 +29,12 @@ export default function Index() {
 
   return (
     <div className={styles.container}>
+      <button
+        onClick={() => scrollTo('calendar')}
+        className={`blueButton ${styles.book}`}
+      >
+        Schedule a Lesson
+      </button>
       <Header scrollTo={scrollTo} />
       <Welcome scrollTo={scrollTo} />
       <span className={styles.bookmark} ref={aboutRef} />
