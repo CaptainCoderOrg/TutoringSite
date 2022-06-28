@@ -1,10 +1,15 @@
 .container {
   background: var(--bgAlt);
-  display: flex;
-  padding: 40px 40px 40px 60px;
 }
 
-.container > div {
+.content {
+  display: flex;
+  padding: 40px 40px 40px 60px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.content > div {
   width: 50%;
 }
 
@@ -13,9 +18,8 @@
 }
 
 .info > h1 {
-  margin-top: 64px;
-  margin-bottom: 0;
-  font-size: 64px;
+  margin: 0;
+  font-size: 2em;
 }
 
 .info > p {
@@ -41,14 +45,20 @@
   }
 }
 
+@media (max-width: 575px) {
+  .info > h1 {
+    font-size: 1.5em;
+  }
+}
+
 @media (max-width: 767px) {
-  .container {
+  .content {
     flex-direction: column;
     align-items: center;
     padding: 40px;
   }
 
-  .container > div {
+  .content > div {
     width: 100%;
   }
 
@@ -59,10 +69,6 @@
 
   .splash {
     padding-left: 0;
-  }
-
-  .info > h1 {
-    font-size: 48px;
   }
 
   .info > p {
