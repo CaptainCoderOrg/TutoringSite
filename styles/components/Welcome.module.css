@@ -67,6 +67,10 @@
     margin-bottom: 16px;
   }
 
+  .info > button {
+    width: 100%;
+  }
+
   .splash {
     padding-left: 0;
   }

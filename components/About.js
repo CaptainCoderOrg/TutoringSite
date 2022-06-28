@@ -24,7 +24,7 @@ export default function About(props) {
             <div className={styles.iconButton}>
               <LinkIcon />
               <a
-                className="blueButton"
+                className="url"
                 href="https://is.gd/iYZfiH"
                 target="_blank"
                 rel="noopener noreferrer"
