@@ -16,7 +16,7 @@ export default function Header(props) {
   return (
     <div className={styles.container}>
       <div className={styles.bannerWrap} onClick={() => scrollTo('welcome')}>
-        <img src="/img/banner.svg" height="64" alt="banner" />
+        <img src="/img/banner.svg" alt="banner" />
       </div>
       <span className="flexfill" />
       <div className={styles.buttons}>
