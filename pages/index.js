@@ -14,7 +14,7 @@ import styles from '../styles/pages/Index.module.css';
 export default function Index() {
   const aboutRef = useRef();
   const testimonialsRef = useRef();
-  const projectsRef = useRef();
+  // const projectsRef = useRef();
   const calendarRef = useRef();
   const contactRef = useRef();
 
@@ -22,7 +22,7 @@ export default function Index() {
     if (section === 'welcome') window.scrollTo(0, 0);
     else if (section === 'about') aboutRef.current.scrollIntoView();
     else if (section === 'testimonials') testimonialsRef.current.scrollIntoView();
-    else if (section === 'projects') projectsRef.current.scrollIntoView();
+    // else if (section === 'projects') projectsRef.current.scrollIntoView();
     else if (section === 'calendar') calendarRef.current.scrollIntoView();
     else if (section === 'contact') contactRef.current.scrollIntoView();
   }
@@ -41,8 +41,8 @@ export default function Index() {
       <About scrollTo={scrollTo} />
       <span className={styles.bookmark} ref={testimonialsRef} />
       <Testimonials />
-      <span className={styles.bookmark} ref={projectsRef} />
-      <Projects />
+      {/* <span className={styles.bookmark} ref={projectsRef} />
+      <Projects /> */}
       <span className={styles.bookmark} ref={calendarRef} />
       <Calendar />
       <span className={styles.bookmark} ref={contactRef} />
