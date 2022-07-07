@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Welcome from '../components/Welcome';
 import About from '../components/About';
 import Testimonials from '../components/Testimonials';
-import Projects from '../components/Projects';
+// import Projects from '../components/Projects';
 import Calendar from '../components/Calendar';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
