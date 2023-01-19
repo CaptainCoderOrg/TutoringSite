@@ -19,7 +19,6 @@ export default function About(props) {
           <div className={styles.bullets}>
             <p><SchoolIcon />University of New Mexico Computer Science</p>
             <p><SchoolIcon />University of Massachusetts Graduate Coursework</p>
-            <p><LocationOnIcon />In Person - Tucson, AZ</p>
             <p><VideocamIcon />Remote - Zoom and Google Hangouts</p>
             <div className={styles.iconButton}>
               <LinkIcon />
