@@ -1,7 +1,7 @@
 import PersonIcon from '@mui/icons-material/Person';
 import SchoolIcon from '@mui/icons-material/School';
 import LinkIcon from '@mui/icons-material/Link';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
 import VideocamIcon from '@mui/icons-material/Videocam';
 
 import styles from '../styles/components/About.module.css';
