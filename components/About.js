@@ -1,6 +1,6 @@
 import PersonIcon from '@mui/icons-material/Person';
 import SchoolIcon from '@mui/icons-material/School';
-import LinkIcon from '@mui/icons-material/Link';
+// import LinkIcon from '@mui/icons-material/Link';
 // import LocationOnIcon from '@mui/icons-material/LocationOn';
 import VideocamIcon from '@mui/icons-material/Videocam';
 
@@ -20,17 +20,6 @@ export default function About(props) {
             <p><SchoolIcon />University of New Mexico Computer Science</p>
             <p><SchoolIcon />University of Massachusetts Graduate Coursework</p>
             <p><VideocamIcon />Remote - Zoom and Google Hangouts</p>
-            <div className={styles.iconButton}>
-              <LinkIcon />
-              <a
-                className="url"
-                href="https://is.gd/iYZfiH"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Wyzant Tutoring Profile
-              </a>
-            </div>
             <button className="blueButton" onClick={() => scrollTo('calendar')}>
               Book now!
             </button>
