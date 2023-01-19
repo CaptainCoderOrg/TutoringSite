@@ -22,7 +22,7 @@ export default function Header(props) {
       <div className={styles.buttons}>
         <button onClick={() => scrollTo('about')}>The Captain</button>
         <button onClick={() => scrollTo('testimonials')}>Testimonials</button>
-        <button onClick={() => scrollTo('projects')}>Student Projects</button>
+        {/* <button onClick={() => scrollTo('projects')}>Student Projects</button> */}
         <button onClick={() => scrollTo('calendar')}>Book a Lesson</button>
         <button onClick={() => scrollTo('contact')}>Contact</button>
       </div>
